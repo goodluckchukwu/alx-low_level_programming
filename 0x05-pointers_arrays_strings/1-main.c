@@ -1,20 +1,22 @@
-#include "main.h"
 #include <stdio.h>
+#include <limits.h>
+
+void swap_int(int *, int *);
 
 /**
- * main - check the code
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    int a;
-    int b;
+	int a;
+	int b;
 
-    a = 98;
-    b = 42;
-    printf("a=%d, b=%d\n", a, b);
-    swap_int(&a, &b);
-    printf("a=%d, b=%d\n", a, b);
-    return (0);
+	a = INT_MAX;
+	b = INT_MIN;
+	printf("%d, %d\n", a, b);
+	swap_int(&a, &b);
+	printf("%d, %d\n", a, b);
+	return (0);
 }
