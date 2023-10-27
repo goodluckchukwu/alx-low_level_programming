@@ -13,7 +13,7 @@ int sqrt_a(int a, int b)
 	{
 		return (b);
 	}
-	else if (b * b > 4)
+	else if (b * b > a)
 	{
 		return (-1);
 	}
@@ -29,4 +29,3 @@ int _sqrt_recursion(int n)
 {
 	return (sqrt_a(n, 0));
 }
-
